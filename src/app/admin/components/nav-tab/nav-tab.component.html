@@ -1,0 +1,7 @@
+<div 
+    [ngClass]="{active : isActive, tab: true}"
+    [routerLink]="['/admin']" 
+    [queryParams]="{tab : name}"
+    >
+        {{ name | titlecase }}
+</div>

@@ -1,0 +1,16 @@
+<lc-single-editable-section
+    title="Background Image"
+    topLevelKey="aboutBackgroundImageUrl"
+    type="image"
+    [value]="data | aboutBackgroundImageData"
+    (textContentChanged)="passTextContentChange($event)"
+></lc-single-editable-section>
+
+<lc-single-editable-section
+    title="Next Audition Deadline"
+    topLevelKey="aboutAuditionDeadline"
+    type="text"
+    [value]="data | aboutAuditionDeadline"
+    [isSingleLine]="true"
+    (textContentChanged)="passTextContentChange($event)"
+></lc-single-editable-section>

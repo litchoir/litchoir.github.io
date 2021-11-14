@@ -1,1 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+p {
+    margin-bottom: 0;
+}
+
+a {
+    color: hsla(212, 63%, 50%, 1);
+}
+
+a:hover {
+    text-decoration: none;
+    color: hsla(223, 98%, 77%, 1);
+}
+
+.form-control:focus {
+    outline: none;
+    box-shadow: none !important;
+}
+
+.form-control:focus {
+    border: 2px solid hsla(212, 63%, 50%, 1);
+}
+
+.text-primary {
+    color: hsla(212, 63%, 50%, 1);
+}
+
+.text-danger {
+    color: rgb(226, 36, 29);
+}
+
+.text-success {
+    color: #22E298;
+}
+
+.accordion-image-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

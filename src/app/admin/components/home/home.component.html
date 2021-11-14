@@ -1,0 +1,27 @@
+<lc-single-editable-section
+    title="Background Image"
+    topLevelKey="homeBackgroundImageUrl"
+    type="image"
+    [value]="data | homeBackgroundImageData"
+    (textContentChanged)="passTextContentChange($event)"
+></lc-single-editable-section>
+
+<lc-accordion-section
+    tooltipMessage="More recently saved news items are displayed first."
+    topLevelKey="newsItems"
+    [data]="data | newsItemsData"
+    [panelHeaderKeys]="['date', 'title']"
+    [panelContentKeys]="['title', 'author', 'content']"
+    [images]="1"
+    [isLoading]="isLoading"
+    (textContentChanged)="passTextContentChange($event)"
+></lc-accordion-section>
+
+<lc-single-editable-section
+    title="Featured Video Link"
+    topLevelKey="featuredVideoLink"
+    type="text"
+    [value]="data | featuredVideoData"
+    [isSingleLine]="true"
+    (textContentChanged)="passTextContentChange($event)"
+></lc-single-editable-section>

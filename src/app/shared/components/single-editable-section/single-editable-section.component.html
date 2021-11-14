@@ -1,0 +1,47 @@
+<lc-section [title]="title">
+    <div class="content-container">
+        <input 
+            [value]="value" 
+            #input 
+            *ngIf="isSingleLine && typeIsText()"
+        >
+        <textarea 
+            [value]="value" 
+            #input 
+            *ngIf="!isSingleLine && typeIsText()" 
+            rows="3">
+        </textarea>
+        <lc-editable-image
+            [src]="value"
+            [enforceCompression]="false"
+            *ngIf="typeIsImage()"
+            [displayHeight]="300"
+            (base64Computed)="storeBase64($event)"
+            [index]="0"
+        ></lc-editable-image>
+        <p 
+            [ngClass]="validationStatus.isError ? 'error-message' : 'feedback-message'"
+            class="validation-message"
+            *ngIf="validationStatus.message"
+        >
+            {{ validationStatus.message }}
+        </p>
+        <div class="button-container">
+            <lc-button 
+                type="primary"
+                [isDisabled]="isSaving"
+                (buttonClick)="typeIsText() ? saveTextValue() : saveImageValue()"  
+            >
+                <lc-spinner 
+                    [colored]="false"
+                    *ngIf="isSaving">
+                </lc-spinner>
+                <i 
+                    *ngIf="!isSaving" 
+                    class="bi bi-check-lg mr-1"
+                ></i>
+                {{ isSaving ? '' : 'Save' }}
+            </lc-button>
+        </div>
+    </div>
+</lc-section>

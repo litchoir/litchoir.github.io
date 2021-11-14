@@ -1,0 +1,32 @@
+<label>
+    <div
+        class="image-container"
+    >
+        <div 
+            class="hoverableMask"
+            *ngIf="imageIsDoneLoading"    
+        ></div>
+        <p 
+            *ngIf="imageIsDoneLoading" 
+            class="editText">
+            <i [ngClass]="['bi', 'bi-' + editTextIcon]"></i>
+            <span class="editTextMessage">{{ editTextMessage }}</span>
+        </p>
+        <lc-spinner
+            *ngIf="!imageIsDoneLoading"
+            [colored]="true"    
+        ></lc-spinner>
+        <img
+            [src]="base64 || src"
+            [hidden]="!imageIsDoneLoading"
+            (click)="fileInputRef.click()"
+            (load)="showImage()"
+            [ngStyle]="{ 'max-height': displayHeight ? displayHeight + 'px' : 'unset'  }"
+        >
+    </div>
+</label>
+<input 
+    type="file" 
+    (change)="fileChange($event)"
+    #fileInputRef
+>

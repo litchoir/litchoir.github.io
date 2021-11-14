@@ -1,0 +1,31 @@
+.navigation-tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 0px;
+    margin-top: 30px;
+}
+
+.navigation-tab {
+    text-align: center;
+    width: 100%;
+    font-size: 22px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.container {
+    margin-bottom: 50px;
+}
+
+.complete-tab-underline {
+    width: 25%;
+    margin: 0;
+    transition: .3s ease-in-out;
+    background-color: hsla(212, 63%, 50%, 1);
+    height: 3px;
+}
+
+.active {
+    font-weight: bold;
+}

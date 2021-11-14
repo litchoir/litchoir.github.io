@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="navigation-tabs">
+        <lc-nav-tab 
+            [ngClass]="{'navigation-tab': true, 'active': activeRoute === t}"
+            *ngFor="let t of ['home', 'about', 'people', 'tours']" 
+            [name]="t"
+            [isActive]="activeRoute === t"
+            [ngStyle]="{'display': 'flex', 'flex-direction': 'column', 'justify-content': 'center'}"
+            >
+        </lc-nav-tab>
+    </div>
+    <hr 
+        class="complete-tab-underline" 
+        [ngStyle]="{ 'margin-left': tabUnderlineMarginPercentage + '%'}"
+    >
+    <div *ngIf="!isAdminDataLoading">
+        <lc-home 
+            *ngIf="activeRoute === 'home'"
+            [data]="data"
+            (textContentChanged)="modifyClientTextContent($event)"
+        ></lc-home>
+        <lc-about
+            *ngIf="activeRoute === 'about'"
+            [data]="data"
+            (textContentChanged)="modifyClientTextContent($event)"
+        ></lc-about>
+        <lc-people
+            *ngIf="activeRoute === 'people'"
+            [data]="data"
+            (textContentChanged)="modifyClientTextContent($event)"
+        ></lc-people>
+        <lc-tours
+            *ngIf="activeRoute === 'tours'"
+            [data]="data"
+            (textContentChanged)="modifyClientTextContent($event)"
+        ></lc-tours>
+    </div>
+    <div *ngIf="isAdminDataLoading" class="spinner-container">
+        <div class="spinner-grow text-primary"></div>
+        <div class="spinner-grow text-secondary"></div>
+        <div class="spinner-grow text-danger"></div>
+    </div>
+</div>

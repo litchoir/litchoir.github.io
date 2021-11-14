@@ -1,0 +1,222 @@
+{
+    "newsItems": {
+        "6188828a33f79fdf9aebe65d03503aacd45cac0ab9b9fb57a4e1a2b8596162af": {
+            "date": 1636746922000,
+            "imageUrls": [
+                "https://lc-admin-website-dynamic-assets.s3.amazonaws.com/img/dynamic/31c4d5279e33e1406b091a68a7f55b5354a63de564cddd84b01e70dcbbc6caf2.jpg"
+            ],
+            "title": "Attention Singers!",
+            "author": "Rymsza, Lauren",
+            "content": "If you are a student at ND, Holy Cross, or St. Mary's, and are interested in auditioning for the Liturgical Choir, please e-mail Andrew McShane at amcshane@nd.edu."
+        },
+        "8d8d961731ef3c13760df00cd27e9b6c06b6b478fcd915210552a9939c859754": {
+            "date": 1636746892303,
+            "imageUrls": [
+                "https://lc-admin-website-dynamic-assets.s3.amazonaws.com/img/dynamic/e2d8500bb82570f3c6d0a5e0da2cc7913254969631ceaa87e2561a4a14fcb370.jpg"
+            ],
+            "title": "Liturgical Choir on Apple Music and Spotify!",
+            "author": "Clare, Tommy",
+            "content": "The Notre Dame Liturgical Choir's recordings are now digital! For links to the choir's albums on Apple Music, Spotify, and more, see the Recordings page."
+        }
+    },
+    "featuredVideoLink": "https://www.youtube.com/embed/1MZnc0gyU8M",
+    "tours": {
+        "cbf096b81696cd3ce5d0462eaa40253cf8b18a4c9ee21f7803d3fb74fb5da4e8": {
+            "date": 1636761025221,
+            "imageUrls": [
+                "https://lc-admin-website-dynamic-assets.s3.amazonaws.com/img/dynamic/758145df6f814c4af0209eaf88ff58afca7b65f692d9c42ce3129fb997427759.jpg",
+                "https://lc-admin-website-dynamic-assets.s3.amazonaws.com/img/dynamic/f99826ac219f6e639664b42bf538418ad07ad4bcb483886990f5c1947a498f88.jpg"
+            ],
+            "year": "2019",
+            "location": "Florida",
+            "description": "In January of 2019, we toured sunny Florida! Highlights included concerts in Tallahassee, Ocala, Orlando, Tampa, Clearwater, Fort Myers, Ave Maria, and Miami, a tour of Ave Maria University, two days on the beach, and a day at Magic Kingdom!"
+        },
+        "a6b3945e82be95241c168242e6a93fad4f1ac05d3d93ef62a5da39ecd8de7548": {
+            "date": 1636761036611,
+            "imageUrls": [
+                "https://lc-admin-website-dynamic-assets.s3.amazonaws.com/img/dynamic/d10d749930d86bdc2bf8b968cd8cc304e530c43a75cdb573fbe4e9b49bb9670f.jpg",
+                "https://lc-admin-website-dynamic-assets.s3.amazonaws.com/img/dynamic/c021a8c798c777b44968d4fdb49447c116fcb61050a6837d3c28abb46379eb49.jpg"
+            ],
+            "year": "2018",
+            "location": "Spain",
+            "description": "Our journey through the heart of Spain featured performances in Madrid, Toledo, Valencia, Montserrat, Barcelona. Notably, we performed a set in La Sagrada Familia, the largest cathedral in Europe."
+        },
+        "aadc0a8e8f9fbf807e380853689e7769431622caff1c59361ab62c2e2d04dba8": {
+            "date": 1636761056641,
+            "imageUrls": [
+                "https://lc-admin-website-dynamic-assets.s3.amazonaws.com/img/dynamic/3dfcee0759eb5d54346d84882cd80c71857dc22c2cf3000be5fa34477fe22151.jpg",
+                "https://lc-admin-website-dynamic-assets.s3.amazonaws.com/img/dynamic/032d56dfad241cdefeb910ec061b91b8f606ea2281886baef2870762243f0d73.jpg"
+            ],
+            "year": "2017",
+            "location": "California",
+            "description": "In January of 2017, our California tour included stops in Los Angeles, Orange County, and San Francisco, featuring performances at many prominent cathedrals, as well as a trip to Disneyland!"
+        },
+        "a6fb4091fd0ce401db7c365efdbf401fabf27b5b932e0fc2487be1aaa954f9c8": {
+            "date": 1636761062069,
+            "imageUrls": [
+                "https://lc-admin-website-dynamic-assets.s3.amazonaws.com/img/dynamic/f3fa2593e7b8dce064dd3862fa1b66e77d90ea7c900e9e92b4a5ffbf0cebbd98.jpg",
+                "https://lc-admin-website-dynamic-assets.s3.amazonaws.com/img/dynamic/1b1fd605c1c6a029ffd14cb0dbf5d0a2f613ed2d2bd02ec041ddef0ee6f73a89.jpg"
+            ],
+            "year": "2016",
+            "location": "Austria & Czech Republic",
+            "description": "Our 2016 international tour featured performances at prominent cathedrals in Vienna and Salzburg, Austria, and Prague, Czech Republic."
+        },
+        "27460311c8f6c05de6b9b9554238cfe3136495c5143174d8ffc83ab395b6ac76": {
+            "date": 1636761066451,
+            "imageUrls": [
+                "https://lc-admin-website-dynamic-assets.s3.amazonaws.com/img/dynamic/ac58294447fdb6944c16607fb6efa3e3909f58caa861e43a7d16d086f3937bda.jpg",
+                "https://lc-admin-website-dynamic-assets.s3.amazonaws.com/img/dynamic/fd8199521bd9ce8390feff15d84280d5e83d3495f38d4f3fe75cb673c795e412.jpg"
+            ],
+            "year": "2015",
+            "location": "Texas",
+            "description": "Our journey through Texas involved stops in San Antonio, Austin, and Dallas. Over the week, we gave performaces at the Catholic Churches of St. Ignatius, St Rita, and Christ the King."
+        },
+        "3c894579c79a565053431b3c9bbbfcd4ab4383cb786deb06a305613d45f9bc2e": {
+            "date": 1636761070285,
+            "imageUrls": [
+                "https://lc-admin-website-dynamic-assets.s3.amazonaws.com/img/dynamic/dd062ef90c2c19e5598a4b9c1b34099ce4fe531b6fb2128918b677713d45aeb2.jpg",
+                "https://lc-admin-website-dynamic-assets.s3.amazonaws.com/img/dynamic/a82ecdeec6a65ae39715e4d4ba863fb94376da2f8a35d0e8d9fec6764c58818e.jpg"
+            ],
+            "year": "2014",
+            "location": "France",
+            "description": "Our Choir's 2014 international tour included trips to Bayeux, Rouen, Lisieux, Solesmes, Chartres, and Paris - including a performance at Notre Dame Cathedral in Paris and La Madeleine."
+        }
+    },
+    "directors": {
+        "5e1f6001c0d6e8385344b197e646929f4f343c659edb78d767f1157b764cafe5": {
+            "date": 1636754497121,
+            "imageUrls": [
+                "https://lc-admin-website-dynamic-assets.s3.amazonaws.com/img/dynamic/e0eb84271bd265ed6c4fef55dbbe3acace41d87c0424e2c0345023707553b534.jpg"
+            ],
+            "name": "Andrew McShane",
+            "position": "Lead Director",
+            "biography": "Andrew (Andy) McShane is the Director of Music at the Basilica of the Sacred Heart at the University of Notre Dame and Director of the Notre Dame Liturgical Choir. Andrew earned the Bachelor of Music degree in Church Music at Wayne State University in Detroit as a student of Ray Ferguson. At the University of Notre Dame he earned the Master of Music degree in Organ Performance and Literature as a student of Craig Cramer and Gail Walton. Andrew completed his education at the Northwestern University School of Music earning the Doctor of Music degree in Organ and Church Music."
+        },
+        "d51f196f961ef1cf798038c0e9bba7f16fade9b15b2ec47c4d27e4a18929eb6a": {
+            "date": 1636688159321,
+            "imageUrls": [
+                "https://lc-admin-website-dynamic-assets.s3.amazonaws.com/img/dynamic/e1b915e8e45702befcee2c7266903b187146099d9fe7814b351e2cb2839df3d2.jpg"
+            ],
+            "name": "Jonathan Hehn",
+            "position": "Assistant Director",
+            "biography": "Jonathan Hehn (OSL) is a musician and liturgist currently serving as Assistant Director of the Liturgical Choir at the University of Notre Dame. He is a brother in the Order of Saint Luke and holds degrees in music (BM, DM) from the Florida State University and theology (MSM) from the University Notre Dame. Jonathan has studied organ with Michael Corzine and Craig Cramer. He also holds the Choirmaster certificate of the American Guild of Organists and has studied choral conducting with Kevin Fenton, Nancy Menk, and Andre Thomas. Additional time was spent at the Universität Mozarteum in Salzburg, Austria. As a recitalist, Jonathan appears frequently both as a soloist and chamber musician, having performed in Austria and across the United States. He has won prizes in both regional and national competitions in organ performance. An active scholar as well, Jonathan has presented in the area of sacred music and liturgy and both national and international conferences, and his written work has appeared in The American Organist, The Hymn, These Days, Call to Worship, and other print and online periodicals. The Hymn Society awarded him a Lovelace Scholarship in 2011 and 2014, and the Emerging Scholars Award in 2012. He currently edits Sacramental Life, a quarterly magazine published by the Order of Saint Luke. Jonathan was the founder and long time director of the Tallahassee Sacred Music Conference. He is currently a candidate for rostered ministry in the Evangelical Lutheran Church in America. He resides in South Bend, Indiana with his wife, three children, and dog."
+        }
+    },
+    "graduateStudents": {
+        "c68cff432e573aa0dbc4bc6738b240caf5889590deeb7869715d30a8b124c143": {
+            "date": 1636598523977,
+            "imageUrls": [
+                "https://lc-admin-website-dynamic-assets.s3.amazonaws.com/img/dynamic/742cdb58409269441a12797de5770f17e45680a324bfcdce8ab7808ff418ad33.jpg"
+            ],
+            "name": "Maggie Werth",
+            "position": "MSM",
+            "biography": "Maggie is a first-year Masters organ student in the Sacred Music program at Notre Dame. She holds a BM in Organ Performance and Church Music from the University of Kansas, where she graduated in 2020. Maggie hails from Topeka, Kansas, where she enjoys singing and playing with the Most Pure Heart of Mary Schola Cantorum while on academic breaks. She is delighted to work with the Notre Dame Liturgical Choir as they revel in the joy and beauty of singing unending praise to God!"
+        },
+        "6d9da5df71b924325d6bd2069122e087fa3feb81b0391ad114a55b6c8e40ccfd": {
+            "date": 1636490936207,
+            "imageUrls": [
+                "https://lc-admin-website-dynamic-assets.s3.amazonaws.com/img/dynamic/a7b8172fe4e259e1e7fb982a5b9a0bc1e1fd6c3d5dcd89bd68c0e05368bfcda1.jpg"
+            ],
+            "name": "Christian Copeley",
+            "position": "MSM",
+            "biography": "Christian is a second-year graduate student at Notre Dame pursuing a master's degree in Sacred Music. He holds a Bachelor of Arts in Music and Graphic Design from Assumption University where he served as the organ scholar. During the summer Christian plays for Masses at his home parish, Christ the King, in Concord, New Hampshire, and he feels blessed to have the opportunity to work with the Liturgical Choir this year."
+        }
+    },
+    "officers": {
+        "ac6ac87f27dea9bd40259fe263ed4a6e208b506357541236a53e30d7584850bc": {
+            "date": 1636688116019,
+            "imageUrls": [
+                "https://lc-admin-website-dynamic-assets.s3.amazonaws.com/img/dynamic/df88ac6f5a04f5f2b222c9a92ac781dcebad043d50d8ed04ba15f13861ada41d.jpg"
+            ],
+            "name": "Drew Obert",
+            "position": "President",
+            "biography": "Drew is a senior living in Dunne Hall studying Sociology and Economics. He is originally from North Little Rock, Arkansas, sings Baritone, and is excited to sing in his fourth year with the choir."
+        },
+        "d074c70c2f0e994cc40bcc252a2720f694cf9ed0dc459106c0db650659b863ea": {
+            "date": 1636486142861,
+            "imageUrls": [
+                "https://lc-admin-website-dynamic-assets.s3.amazonaws.com/img/dynamic/26f94b2da7ec74a4c4c92325fd32b933ab67f8b775e964991854976524ba7470.jpg"
+            ],
+            "name": "Savannah Anez",
+            "position": "Vice President",
+            "biography": "n/a"
+        },
+        "82905fe2d1c8796f1518617c3cf61a000c1d08370643383c61dd52341adb5fa1": {
+            "date": 1636428116777,
+            "imageUrls": [
+                "https://lc-admin-website-dynamic-assets.s3.amazonaws.com/img/dynamic/c54c3a9eb4508744d5472cb81b5ea23cd4fba2457bd1ee5ffab41978b1989596.jpg"
+            ],
+            "name": "Maggie Laurence",
+            "position": "Secretary (Fall)",
+            "biography": "Maggie is a junior currently living in McGlinn Hall but originally from Minocqua, Wisconsin. She has a double major in Mathematics and Film, Television, and Theatre. She loves Stroope and being an honorary member of Tenor Twosdays!"
+        },
+        "9a92365c199ffc97d0b85a24bd7b3f5d93f03d56d750c1285af7dc01f9adcdab": {
+            "date": 1636428121385,
+            "imageUrls": [
+                "https://lc-admin-website-dynamic-assets.s3.amazonaws.com/img/dynamic/2de8cc4c364c9e187927d6c9231c03abb0a8e55208a17b5c94f771698a8f6d4c.jpg"
+            ],
+            "name": "Evan McKenna",
+            "position": "Secretary (Spring)",
+            "biography": "Evan McKenna is a junior from Tennessee living in Keenan Hall, with a double major in English and Psychology. He enjoys running, reading, writing, and, most of all, singing with the Liturgical Choir."
+        },
+        "ec5daa8452478de14b26d97b4408c8696187bc2654e47978ea556ec98c0c2f21": {
+            "date": 1636490976023,
+            "imageUrls": [
+                "https://lc-admin-website-dynamic-assets.s3.amazonaws.com/img/dynamic/f7b7e3bdf6453cbed009fef651c2f9c192c74615ca87667ed0da1ebf64cd6389.jpg"
+            ],
+            "name": "Jack Consolie",
+            "position": "Tour Director",
+            "biography": "n/a"
+        },
+        "085533a45ecf812fb1e218849ffe6494ab3d9f020d85ed967d87b28002f8c056": {
+            "date": 1636428131320,
+            "imageUrls": [
+                "https://lc-admin-website-dynamic-assets.s3.amazonaws.com/img/dynamic/bc56b20da4fa3c8a8a1d53301a08790a83bc11aa6e93908d3fccf64d3d3167d0.jpg"
+            ],
+            "name": "Elizabeth Hentges",
+            "position": "Treasurer",
+            "biography": "n/a"
+        },
+        "32f41ba4227e0ef23c6a3314c20cbc7319053dbcdbb496a4da7a911aa8342b00": {
+            "date": 1636427500801,
+            "imageUrls": [
+                "https://lc-admin-website-dynamic-assets.s3.amazonaws.com/img/dynamic/8f5d585cd63d06cf81c6d6c0afac450eec9bb3f23f94951af273086dc68f90a2.jpg"
+            ],
+            "name": "Kieran Emmons",
+            "position": "Business Manager",
+            "biography": "n/a"
+        },
+        "216e893a37aaef1c8f84312bdac902a3585e7c019c3de2a9d3b0ef4e1712fc49": {
+            "date": 1636427511041,
+            "imageUrls": [
+                "https://lc-admin-website-dynamic-assets.s3.amazonaws.com/img/dynamic/e6fe8089f8d79e0f66eacd967dd8843045175a013ed6d791206a30e722f52320.jpg"
+            ],
+            "name": "Katie Hyry",
+            "position": "Alumni Relations",
+            "biography": "n/a"
+        },
+        "d2f41a49374d1a610575b4fe6f5a725005a700f84e25515bd5027c870feadd4e": {
+            "date": 1636486532460,
+            "imageUrls": [
+                "https://lc-admin-website-dynamic-assets.s3.amazonaws.com/img/dynamic/d09971d4e105f8036a3ac86365f2fb1c092d74308b350b58710e825bd66befa6.jpg"
+            ],
+            "name": "Lauren Rymsza",
+            "position": "Webmaster",
+            "biography": "Lauren is a junior studying Electrical Engineering. She lives in McGlinn Hall, and loves keeping the world up to date on all things Lit Choir!"
+        },
+        "08dc8726194d6b84f973fdea2e783fff6eaec8326ba24c7f121eedf478fbdde9": {
+            "date": 1636754521767,
+            "imageUrls": [
+                "https://lc-admin-website-dynamic-assets.s3.amazonaws.com/img/dynamic/08835813caf9529cb5c9e3dd3c70de9b509a84a3003808ebeef36e1550a8d43c.jpg"
+            ],
+            "name": "Heather Christman",
+            "position": "Liturgical Commissioner",
+            "biography": "Heather is a senior from Minnesota living in Pasquerilla West Hall (peace, love, dub!) and is studying Theology and Music with a minor in Education, Schooling, and Society."
+        }
+    },
+    "aboutAuditionDeadline": "August 24, 2019",
+    "homeBackgroundImageUrl": "https://lc-admin-website-dynamic-assets.s3.amazonaws.com/img/dynamic/ee061d481cf16ba45483eb8e2ba4d92bc2022b3de1850ed5b989f2eeb4139795.jpg",
+    "aboutBackgroundImageUrl": "https://lc-admin-website-dynamic-assets.s3.amazonaws.com/img/dynamic/fb3791b0b2031bc5ae472a3399f1c96611df16585a35bf4f21a05c050105c971.jpg",
+    "peopleBackgroundImageUrl": "https://lc-admin-website-dynamic-assets.s3.amazonaws.com/img/dynamic/981b4a5d0b8bb4b0c1159eb7a126d6174d57c9a7d974484d38b54c05dc0d7d02.jpg",
+    "toursBackgroundImageUrl": "https://lc-admin-website-dynamic-assets.s3.amazonaws.com/img/dynamic/51949be16c1418b10fbf3086f3de468f305b98a37dd03d25e73c9630ab4d2d19.jpg"
+}
