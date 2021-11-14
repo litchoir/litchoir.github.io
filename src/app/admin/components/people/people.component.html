@@ -1,0 +1,37 @@
+<lc-single-editable-section
+    title="Background Image"
+    topLevelKey="peopleBackgroundImageUrl"
+    type="image"
+    [value]="data | peopleBackgroundImageData"
+    (textContentChanged)="passTextContentChange($event)"
+></lc-single-editable-section>
+
+<lc-accordion-section
+    tooltipMessage="1) Lead Director; 2) Assistant Director. Please check spelling :)"
+    topLevelKey="directors"
+    [data]="data | directorsData"
+    [panelHeaderKeys]="['position', 'name']"
+    [panelContentKeys]="['name', 'position', 'biography']"
+    [images]="1"
+    (textContentChanged)="passTextContentChange($event)"
+></lc-accordion-section>
+
+<lc-accordion-section
+    tooltipMessage="More recently saved graduate students are displayed last."
+    topLevelKey="graduateStudents"
+    [data]="data | graduateStudentsData"
+    [panelHeaderKeys]="['position', 'name']"
+    [panelContentKeys]="['name', 'position', 'biography']"
+    [images]="1"
+    (textContentChanged)="passTextContentChange($event)"
+></lc-accordion-section>
+
+<lc-accordion-section
+    tooltipMessage="1) President; 2) Vice President; 3) Secretary; 4) Tour Director; 5) Treasurer; 6) Business Manager; 7) Alumni Relations; 8) Webmaster; 9) Liturgical Commissioner. Please check spelling :)"
+    topLevelKey="officers"
+    [data]="data | officersData"
+    [panelHeaderKeys]="['position', 'name']"
+    [panelContentKeys]="['name', 'position', 'biography']"
+    [images]="1"
+    (textContentChanged)="passTextContentChange($event)"
+></lc-accordion-section>

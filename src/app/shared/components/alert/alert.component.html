@@ -1,0 +1,7 @@
+<div [ngClass]="['alert', 'alert-' + type]">
+    <b class="ml-1 mr-1">
+        {{ emoji }}
+        <span class="ml-1">{{ boldText }}</span>
+    </b>
+    <span [innerHTML]="regularText"></span>
+</div>

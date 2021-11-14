@@ -1,0 +1,199 @@
+<lc-section
+    [title]="topLevelKey | camelCaseToTitleCase"
+    [tooltipMessage]="tooltipMessage"
+>
+    <ngb-accordion #acc="ngbAccordion" *ngIf="data" (shown)="shown()" (hidden)="hidden()">
+        <ngb-panel *ngFor="let d of data; let i = index;" [id]="accordionItemFrom(d.id)">
+            <ng-template ngbPanelHeader let-opened="opened">
+                <div class="accordion-header-flexbox">
+                    <div class="accordion-header-item-end accordion-vertical-container font-weight-bold">
+                        {{ (panelHeaderKeys[0] === 'date' ? (d[panelHeaderKeys[0]] | date) : d[panelHeaderKeys[0]]) || 'New ' + (panelHeaderKeys[0] | titlecase) }}
+                    </div>
+                    <div class="accordion-vertical-container d-md-flex d-none">{{ d[panelHeaderKeys[1]] || 'New ' + (panelHeaderKeys[1] | titlecase) }}</div>
+                    <div class="accordion-header-item-end accordion-action-buttons">
+                        <lc-button 
+                            class="mr-1" 
+                            type="primary" 
+                            (buttonClick)="editOrSaveButtonClicked(accordionItemFrom(d.id))"
+                            [isDisabled]="isButtonDisabled(accordionItemFrom(d.id))"  
+                        >
+                            <i [ngClass]="{
+                                'bi': true, 
+                                'bi-pencil-fill': !isEditingAccordionItem(accordionItemFrom(d.id)),
+                                'bi-check-circle-fill': isEditingAccordionItem(accordionItemFrom(d.id))
+                            }"></i>
+                        </lc-button>
+                        <lc-button 
+                            *ngIf="isEditingAccordionItem(accordionItemFrom(d.id))"
+                            type="danger"
+                            (buttonClick)="deleteButtonClicked(deleteModalContent)" 
+                            [isDisabled]="!stateIsEditing()"
+                        >
+                            <i class="bi bi-trash-fill"></i>
+                        </lc-button>
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template ngbPanelContent>
+                <form>
+                    <!-- Input templates -->
+                    <ng-template #firstInput>
+                        <div class="form-group">
+                            <label for="panel-content-key-1">{{ panelContentKeys[0] | titlecase }}</label>
+                            <input 
+                                type="text" 
+                                id="panel-content-key-1"
+                                class="form-control" 
+                                [placeholder]="panelContentKeys[0] | titlecase" 
+                                [value]="d[panelContentKeys[0]]"
+                                #panelContentKey1   
+                            >
+                        </div>
+                    </ng-template>
+                    <ng-template #secondInput>
+                        <div class="form-group">
+                            <label for="panel-content-key-2">{{ panelContentKeys[1] | titlecase }}</label>
+                            <input 
+                                type="text"
+                                class="form-control" 
+                                id="panel-content-key-2" 
+                                [placeholder]="panelContentKeys[1] | titlecase"
+                                [value]="d[panelContentKeys[1]]"
+                                #panelContentKey2
+                            >
+                        </div>
+                    </ng-template>
+                    <ng-template #thirdInput>
+                        <div class="form-group">
+                            <label for="panel-content-key-3">{{ panelContentKeys[2] | titlecase }}</label>
+                            <textarea 
+                                class="form-control" 
+                                id="panel-content-key-3" 
+                                [placeholder]="panelContentKeys[2] | titlecase" 
+                                rows="3"
+                                [value]="d[panelContentKeys[2]]"
+                                #panelContentKey3
+                            ></textarea>
+                        </div> 
+                    </ng-template>
+
+                    <div class="form-row">
+                        <!-- First image -->
+                        <div 
+                            class="form-group accordion-image-column col-md-6"
+                            [ngClass]="hasMultipleImages() ? 'order-3' : 'order-1' "
+                        >
+                            <lc-editable-image
+                                [index]="0"
+                                [src]="d.imageUrls[0]"
+                                [displayHeight]="300"
+                                (base64Computed)="imageEdited($event)"
+                            ></lc-editable-image>
+                        </div>
+
+                        <!-- First image -->
+                        <div 
+                            class="form-group accordion-image-column col-md-6 order-4"
+                            *ngIf="hasMultipleImages()"
+                        >
+                            <lc-editable-image
+                                [index]="1"
+                                [src]="d.imageUrls[1]"
+                                [displayHeight]="300"
+                                (base64Computed)="imageEdited($event)"
+                            ></lc-editable-image>
+                        </div>
+
+                        <!-- Second image. Only visible when images === 2 (obviously)-->
+
+                        <!-- Complete form. Only visible when images == 1 -->
+                        <div 
+                            class="form-item-container form-group col-md-6 order-2"
+                            *ngIf="!hasMultipleImages()"
+                        >
+                            <ng-container *ngTemplateOutlet="firstInput"></ng-container>
+                            <ng-container *ngTemplateOutlet="secondInput"></ng-container>
+                            <ng-container *ngTemplateOutlet="thirdInput"></ng-container>
+                        </div>
+
+                        <!-- First half of the form. Only visible when images === 2 -->
+                        <div
+                            class="form-item-container-fs form-group col-md-6 order-1"
+                            *ngIf="hasMultipleImages()"
+                        >
+                            <ng-container *ngTemplateOutlet="firstInput"></ng-container>
+                            <ng-container *ngTemplateOutlet="secondInput"></ng-container>
+                        </div>
+
+                        <!-- Second half of the form. Only visible when images === 2 -->
+                        <div
+                            class="form-item-container-fs form-group col-md-6 order-2"
+                            *ngIf="hasMultipleImages()"
+                        >
+                            <ng-container *ngTemplateOutlet="thirdInput"></ng-container>
+                        </div>
+                    </div>
+                    <div class="form-row" *ngIf="!stateIsEditing()">
+                        <div class="col-12">
+                            <div class="alert alert-primary w-100">
+                                <div class="saving-flexbox">
+                                    <div class="alert-spinner-or-icon" [ngSwitch]="saveState">
+                                        <lc-spinner *ngSwitchCase="SaveState.Saving" [colored]="true"></lc-spinner>
+                                        <i *ngSwitchCase="SaveState.SuccessfullySaved" class="bi bi-check-circle-fill"></i>
+                                        <i class="bi bi-exclamation-circle-fill" *ngSwitchCase="SaveState.UnsuccessfullySavedForbidden"></i>
+                                        <i class="bi bi-exclamation-circle-fill" *ngSwitchCase="SaveState.UnsuccessfullySavedOther"></i>
+                                    </div>
+                                    <b class="alert-bold-text ml-3" [ngSwitch]="saveState">
+                                        <span *ngSwitchCase="SaveState.Saving">Saving Changes:</span>
+                                        <span *ngSwitchCase="SaveState.SuccessfullySaved">Changes Successfully Saved</span>
+                                        <span *ngSwitchCase="SaveState.UnsuccessfullySavedForbidden">Oh no!</span>
+                                        <span *ngSwitchCase="SaveState.UnsuccessfullySavedOther">Oh no!</span>
+                                    </b>
+                                    <p class="alert-regular-text ml-2" [ngSwitch]="saveState">
+                                        <span *ngSwitchCase="SaveState.Saving">Please don't leave this page.</span>
+                                        <span *ngSwitchCase="SaveState.SuccessfullySaved">This window will close automatically.</span>
+                                        <span *ngSwitchCase="SaveState.UnsuccessfullySavedForbidden">You aren't authorized to make the intended change. Redirecting you to login page.</span>
+                                        <span *ngSwitchCase="SaveState.UnsuccessfullySavedOther">Something went wrong. Try again later.</span>
+                                    </p> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </ng-template>
+        </ngb-panel>
+    </ngb-accordion>
+    <div *ngIf="data.length === 0" class="no-items-container">
+        <span class="no-items-headline">No {{ topLevelKey | camelCaseToTitleCase }} to Show</span>
+        <span class="no-items-subheadline">Click 'Add New' Below to add some!</span>
+    </div>
+    <div class="button-container">
+        <lc-button (buttonClick)="addNewButtonClicked()">
+            <i class="bi bi-plus-lg mr-2"></i> 
+            <span>Add New</span>
+        </lc-button>
+    </div>
+</lc-section>
+
+<!-- Delete modal -->
+
+<ng-template #deleteModalContent let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">Delete Item</h4>
+      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('cross')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+        <b>Are you sure you want to delete this item?</b>
+        This action cannot be undone.
+    </div>
+    <div class="modal-footer">
+        <lc-button 
+            type="danger"
+            (buttonClick)="deleteAccordionItem()"    
+        >
+            Permanently Delete
+        </lc-button>
+    </div>
+</ng-template>

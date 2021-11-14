@@ -1,0 +1,17 @@
+<div class="outermost-div">
+    <h2 class="d-flex align-items-center">
+        <span>{{ title }}</span>
+        <div *ngIf="tooltipMessage" class="information-tooltip">
+            <ng-template #tooltipContent>
+                <b>Order of display</b>: 
+                <br>
+                {{ tooltipMessage }}
+            </ng-template>
+            <span placement="top" [ngbTooltip]="tooltipContent">
+                <i class="bi bi-info-circle"></i>
+            </span>
+        </div>
+    </h2>
+    <hr/>
+    <ng-content></ng-content>
+</div>

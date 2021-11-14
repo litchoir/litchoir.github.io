@@ -1,0 +1,54 @@
+.btn {
+    padding: 5px 12px;
+    color: white;
+}
+
+.btn-primary-dark {
+    background-color: hsla(212, 63%, 50%, 1);
+    border: 1px solid hsla(212, 63%, 50%, 1);
+}
+
+.btn-primary-light {
+    background-color: hsla(223, 98%, 77%, 1);
+    border: 1px solid hsla(223, 98%, 77%, 1);
+}
+
+.btn-primary-dark:hover {
+    background-color: hsla(223, 98%, 77%, 1);
+    border: 1px solid hsla(223, 98%, 77%, 1);
+}
+
+.btn:focus, .btn:active {
+    outline: none;
+    box-shadow: none !important;
+}
+
+.btn-danger-light, .btn-danger-dark:hover {
+    background-color: rgb(255, 104, 98);
+    border: 1px solid rgb(255, 104, 98);
+}
+
+.btn-danger-dark {
+    background-color: rgb(226, 36, 29);
+    border: 1px solid rgb(226, 36, 29);
+}
+
+.btn-success-dark {
+    background-color: #22E298;
+    border: 1px solid #22E298;
+}
+
+.btn-success-light, .btn-success-dark:hover {
+    background-color: #27ffac;
+    border: 1px solid #27ffac;
+}
+
+.btn-secondary-dark {
+    background-color: #999999;
+    border: 1px solid #999999;
+}
+
+.btn-secondary-light, .btn-secondary-dark:hover {
+    background-color: #bbbbbb;
+    border: 1px solid #bbbbbb;
+}

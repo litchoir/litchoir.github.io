@@ -1,0 +1,62 @@
+<div class="login-container">
+    <div class="login-card-container">
+        <lc-card>
+            <img src="/assets/lc-seal.png">
+            <div class="card-content-container">
+                <div class="text-center mb-3">
+                    <lc-large-header>Login</lc-large-header>
+                </div>
+                <div class="mb-5">
+                    <lc-alert
+                        [type]="alertData[currentAlert].type"
+                        [boldText]="alertData[currentAlert].boldText"
+                        [regularText]="alertData[currentAlert].regularText"
+                        [emoji]="alertData[currentAlert].emoji"    
+                    ></lc-alert>
+                </div>
+                <div class="mb-3 w-100">
+                    <form>
+                        <label class="sr-only" for="inlineFormInputGroup">Password</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock-fill" viewBox="0 0 16 16">
+                                        <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/>
+                                      </svg>
+                                </div> 
+                            </div>
+                            <input 
+                                [(ngModel)]="password"
+                                type="password" 
+                                class="form-control" 
+                                id="password"
+                                name="password"
+                                placeholder="Password"
+                            >
+                        </div>
+                    </form>
+                </div>
+                <div class="mb-5">
+                    <lc-button
+                        [type]="'primary'" 
+                        [extraConfig]="{'borderRadius': '20px', 'width': '100%'}"
+                        [isDisabled]="isLoading"
+                        (buttonClick)="logUserIn()">
+                        <lc-spinner 
+                            [colored]="false"
+                            *ngIf="isLoading">
+                        </lc-spinner>
+                        <div *ngIf="!isLoading">Login</div>
+                    </lc-button>
+                </div>
+                <div class="link-collection">
+                    <lc-link-with-icon *ngFor="let link of linkData"
+                        [src]="link.src"
+                        [text]="link.text"
+                        [svgPaths]="link.svgPaths"
+                    ></lc-link-with-icon>
+                </div>
+            </div>
+        </lc-card>
+    </div>
+</div>

@@ -1,0 +1,8 @@
+<button
+    [ngClass]="computeButtonClasses()"
+    [ngStyle]="extraConfig"
+    (click)="buttonClicked()"
+    [disabled]="isDisabled"
+    type="button"
+><ng-content></ng-content>
+</button>

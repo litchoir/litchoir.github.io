@@ -1,0 +1,18 @@
+<lc-single-editable-section
+    title="Background Image"
+    topLevelKey="toursBackgroundImageUrl"
+    type="image"
+    [value]="data | toursBackgroundImageData"
+    (textContentChanged)="passTextContentChange($event)"
+></lc-single-editable-section>
+
+<lc-accordion-section
+    tooltipMessage="More recent tours are displayed first."
+    topLevelKey="tours"
+    [data]="data | toursData"
+    [panelHeaderKeys]="['year', 'location']"
+    [panelContentKeys]="['year', 'location', 'description']"
+    [images]="2"
+    [isLoading]="isLoading"
+    (textContentChanged)="passTextContentChange($event)"
+></lc-accordion-section>

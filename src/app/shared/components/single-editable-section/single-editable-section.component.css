@@ -1,0 +1,39 @@
+@media screen and (min-width: 768px) {
+    input {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    input {
+        width: 100%;
+    }
+}
+
+input {
+    height: 35px;
+    padding: 0 5px;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.button-container {
+    margin-top: 16px;
+}
+
+.error-message {
+    color: rgb(226, 36, 29);;
+}
+
+.validation-message {
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.feedback-message {
+    color: hsla(212, 63%, 50%, 1);
+}
